@@ -21,7 +21,7 @@ use Composer\Plugin\PluginInterface;
  *
  * @package phpcmx\composerCopy
  */
-class InstallerPlugin // implements PluginInterface
+class InstallerPlugin implements PluginInterface
 {
     public $configPath = '';
     private $configFileName = 'composerCopy.php';
