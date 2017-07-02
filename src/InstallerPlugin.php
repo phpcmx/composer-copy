@@ -34,5 +34,6 @@ class InstallerPlugin implements PluginInterface
     {
         var_export($composer->getConfig());
         var_export($io);
+        
     }
 }
