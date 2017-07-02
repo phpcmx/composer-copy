@@ -1,0 +1,27 @@
+{
+  "name": "phpcmx/composer-copy",
+  "type": "composer-plugin",
+  "authors": [
+    {
+      "name": "不二进制·Number",
+      "homepage": "http://blog.fijdemon.com"
+    }
+  ],
+
+  "description": "一个移动网站资源文件的插件",
+  "license": "MIT",
+  "keywords": ["asset", "dist", "public", "static"],
+
+  "require": {
+    "composer-plugin-api": "1.0.0"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "phpcmx\\composerCopy\\": "src/"
+    }
+  },
+  "extra": {
+    "class": "phpcmx\\composerCopy\\InstallerPLugin"
+  }
+}
