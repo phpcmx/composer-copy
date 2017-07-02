@@ -13,7 +13,7 @@
   "keywords": ["asset", "dist", "public", "static"],
 
   "require": {
-    "composer-plugin-api": "1.0.0"
+    "composer-plugin-api": "^1.0"
   },
 
   "autoload": {
@@ -22,6 +22,6 @@
     }
   },
   "extra": {
-    "class": "phpcmx\\composerCopy\\InstallerPLugin"
+    "class": "phpcmx\\composerCopy\\InstallerPlugin"
   }
 }
