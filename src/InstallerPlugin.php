@@ -74,7 +74,7 @@ class InstallerPlugin implements PluginInterface
         // 保存要复制的列表
         $this->copyList = include $configFile;
 
-        if(empty($this->copyList)){
+        if(empty($this->copyList) and $this->copyList !== []){
             $this->copyList = [];
 
             throw new \RuntimeException('加载文件失败'.$configFile);
