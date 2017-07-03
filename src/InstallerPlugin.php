@@ -140,6 +140,8 @@ class InstallerPlugin implements PluginInterface
                 $this->copyFile($source, $destination);
             }
         }
+
+        echo "DONE...".PHP_EOL;
     }
     
     /**
