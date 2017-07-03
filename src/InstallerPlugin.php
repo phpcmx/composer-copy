@@ -72,8 +72,14 @@ class InstallerPlugin implements PluginInterface
         }
         
         // 保存要复制的列表
-        $this->copyList = file_get_contents($configFile);
-        
+        $this->copyList = include $configFile;
+
+        if(empty($this->copyList)){
+            $this->copyList = [];
+
+            throw new \RuntimeException('加载文件失败'.$configFile);
+        }
+
         // 移动
         $this->copy();
     }
@@ -84,6 +90,9 @@ class InstallerPlugin implements PluginInterface
     public function createConfigFile(){
         // 生成最终的文件路径
         $configFilePath = $this->configDir . $this->configFileName;
+
+        // log
+        echo "生成配置文件".PHP_EOL;
         
         // 默认配置文件
         $configTplFile = (dirname(__DIR__)."/data/configDefault.data");
