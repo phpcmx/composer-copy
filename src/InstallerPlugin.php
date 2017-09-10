@@ -57,7 +57,7 @@ class InstallerPlugin implements PluginInterface
 
         // 生成目标位置
         $this->configDir = $this->vendorDir.DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR.
-            'cli'.DIRECTORY_SEPARATOR.
+            'phpcmx'.DIRECTORY_SEPARATOR.
             "config".DIRECTORY_SEPARATOR;
 
         // 生成最终的文件路径
