@@ -56,7 +56,7 @@ class InstallerPlugin implements PluginInterface
         $this->vendorDir = $composer->getConfig()->get('vendor-dir');
 
         // 生成目标位置
-        $this->configDir = $this->vendorDir.DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR.
+        $this->configDir = $this->vendorDir.DIRECTORY_SEPARATOR.
             'phpcmx'.DIRECTORY_SEPARATOR.
             "config".DIRECTORY_SEPARATOR;
 
